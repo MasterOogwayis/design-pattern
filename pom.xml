@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zsw.demo</groupId>
-    <artifactId>design-pattern-homework</artifactId>
+    <artifactId>design-pattern</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
