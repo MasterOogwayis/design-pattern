@@ -7,6 +7,8 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ * cglib动过动态继承来实现功能增强，借口并不是必须的
+ *
  * @author ZhangShaowei on 2019/3/12 13:11
  **/
 public class CglibProxy implements MethodInterceptor {

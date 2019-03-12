@@ -4,6 +4,8 @@ import com.zsw.design.proxy.ObjectTarget;
 import lombok.AllArgsConstructor;
 
 /**
+ * 显示的通过代码实现代理，当功能扩展时必须扩展新功能的实现
+ *
  * @author ZhangShaowei on 2019/3/12 10:59
  **/
 @AllArgsConstructor
