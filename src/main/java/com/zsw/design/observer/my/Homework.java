@@ -1,4 +1,4 @@
-package com.zsw.design.observer.school;
+package com.zsw.design.observer.my;
 
 /**
  * 作业

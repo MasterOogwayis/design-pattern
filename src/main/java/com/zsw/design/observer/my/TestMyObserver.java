@@ -1,4 +1,4 @@
-package com.zsw.design.observer.school;
+package com.zsw.design.observer.my;
 
 import lombok.SneakyThrows;
 import org.apache.commons.lang.math.RandomUtils;
@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Shaowei Zhang on 2019/3/18 0:17
  **/
-public class TestObserverS {
+public class TestMyObserver {
 
     @SneakyThrows
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class TestObserverS {
                     teacher.setHomework("语文");
                     Thread.sleep(1000);
                     if (teacher.countObservers() == 0) {
-                        System.err.println("学生都跑完了.....................");
+                        System.err.println("学生都跑完了..................... exit");
                         break;
                     }
                 }

@@ -1,4 +1,4 @@
-package com.zsw.design.observer.school;
+package com.zsw.design.observer.my;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.util.Observable;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Teacher extends Observable implements Homework {
+class Teacher extends Observable implements Homework {
 
     private String name;
 

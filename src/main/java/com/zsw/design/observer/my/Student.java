@@ -1,4 +1,4 @@
-package com.zsw.design.observer.school;
+package com.zsw.design.observer.my;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +13,7 @@ import java.util.Observer;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Student implements Observer {
+class Student implements Observer {
 
     private String name;
 
