@@ -7,6 +7,8 @@ import java.lang.reflect.Proxy;
 /**
  * jdk 提供的代理动过动态生成字节码 ，实现接口来增强功能，必须是接口才行
  *
+ * jvm 规范中字节码文件表示接口数量 interfaces_count 为 u2 即2字节，所以接口数量 必须小于
+ *
  * @author ZhangShaowei on 2019/3/12 11:01
  **/
 public class JdkProxy implements InvocationHandler {
