@@ -6,7 +6,7 @@ package com.zsw.design.template.iinterface;
 public interface Waiter {
 
     default void cut(Pizza pizza) {
-        pizza.cut("切成是18块");
+        pizza.cut("切成18块");
     }
 
     default void box(Pizza pizza) {
