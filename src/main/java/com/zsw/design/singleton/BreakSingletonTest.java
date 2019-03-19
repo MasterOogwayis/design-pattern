@@ -20,11 +20,11 @@ public class BreakSingletonTest {
 
     @SneakyThrows
     public static void main(String[] args) {
-        LazyTarget target = LazyTarget.getInstance();
+        SafeTarget target = SafeTarget.getInstance();
         // 1. 通过反射破坏单例 成功
-        Constructor<LazyTarget> constructor = LazyTarget.class.getDeclaredConstructor();
+        Constructor<SafeTarget> constructor = SafeTarget.class.getDeclaredConstructor();
         constructor.setAccessible(true);
-        LazyTarget reflectTarget = constructor.newInstance();
+        SafeTarget reflectTarget = constructor.newInstance();
         System.out.println("反射: " + (target.equals(reflectTarget)));
 
         // 2. 通过序列化破坏单例 成功
@@ -32,7 +32,7 @@ public class BreakSingletonTest {
         @Cleanup ObjectOutputStream oos = new ObjectOutputStream(bos);
         oos.writeObject(target);
         @Cleanup ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(bos.toByteArray()));
-        LazyTarget seriableTarget = (LazyTarget) ois.readObject();
+        SafeTarget seriableTarget = (SafeTarget) ois.readObject();
         System.out.println("序列化: " + (target.equals(seriableTarget)));
 
 
